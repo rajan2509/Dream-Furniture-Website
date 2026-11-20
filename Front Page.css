@@ -1,0 +1,359 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f7;
+}
+
+/* Time Section */
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Section */
+#navbar {
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navbar::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    opacity: 0.8;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+#navbar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    box-shadow: whitesmoke 0px 0px 2px 1px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    padding: 5px 23px;
+    color: gainsboro;
+    border-radius: 23px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    box-shadow: whitesmoke 0px 0px 2px 1px;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    width: 175px;
+    padding: 4.5px;
+    color: gainsboro;
+    font-family: 'Roboto';
+    background-color: black;
+    border-radius: 23px 0 0 23px;
+    box-shadow: whitesmoke 0px 0px 2px 1px;
+}
+
+::placeholder {
+    color: gainsboro;
+    padding: 10px;
+}
+
+#search-button {
+    padding: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    border-left: none;
+    color: gainsboro;
+    background-color: black;
+    border-radius: 0 23px 23px 0;
+    box-shadow: whitesmoke 0px 0px 2px 1px;
+}
+
+#search-button .fa-search {
+    fill: gainsboro;
+    width: 30px;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    margin: 3px 20px;
+    transition: 0.4s;
+    background: #fff;
+    border-radius: 11px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    padding: 0px 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home::before {
+    top: 0px;
+    left: 0px;
+    content: "";
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    position: absolute;
+    background: url('homebg.avif')no-repeat center center/cover;
+}
+
+#home h1 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    animation: hading 2s ease-in-out 0s 1 forwards;
+}
+
+#home p {
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 23px;
+    margin: 70px 0px;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.3);
+    font-family: 'roboto', sans-serif;
+    animation: hading 2s ease-in-out 0s 1 forwards;
+}
+
+/* Package Section */
+#package-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f7;
+}
+
+#package {
+    margin: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#package .box {
+    margin: 23px;
+    width: 800px;
+    padding: 23px;
+    border-radius: 23px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+#package img {
+    width: 600px;
+    margin: 23px;
+    height: 345px;
+    border-radius: 23px;
+    border: 2px solid black;
+}
+
+#package h2 {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+    font-family: 'roboto', sans-serif;
+}
+
+#package h3 {
+    font-size: x-large;
+    font-family: 'roboto', sans-serif;
+}
+
+#package li {
+    font-size: large;
+    font-family: 'roboto', sans-serif;
+}
+
+#package button{
+    margin: 7px;
+}
+
+/* Product Section */
+#product-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f7;
+}
+
+#product {
+    display: grid;
+    align-self: stretch;
+    align-items: center;
+    grid-template-columns: repeat(5, auto);
+}
+
+#product img {
+    margin: auto;
+    height: 150px;
+    display: flex;
+}
+
+#product h4 {
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.product-item {
+    margin: 23px;
+}
+
+.product-item:hover {
+    cursor: pointer;
+    color: #f3601e;
+}
+
+
+/* Contact Section */
+#contact-us h1 {
+    text-shadow: 4px 4px 4px grey;
+    /* background: url('CBG.jpg') center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 10s linear infinite; */
+}
+
+/* @keyframes animate {
+    to {
+        background-position-x: -200px;
+    }
+} */
+
+#contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+}
+
+#contact {
+    display: grid;
+    grid-gap: 55px;
+    align-items: center;
+    align-self: anchor-center;
+    grid-template-columns: repeat(3, auto);
+}
+
+#contact-us::before {
+    top: 0px;
+    left: 0px;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    opacity: 0.8;
+    height: 100%;
+    position: absolute;
+    background: url('CBG.jpg') no-repeat center center/cover;
+}
+
+#contact img {
+    width: 30px;
+    height: 30px;
+}
+
+#contact .contact-item {
+    margin: 23px 0px;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    color: floralwhite;
+    font-family: 'roboto', sans-serif;
+}
+
+/* Unitilitiy Section */
+.primary {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secondry {
+    display: flex;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes hading {
+    0% {
+        top: 0px;
+        left: -1500px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.btn {
+    margin-top: 80px;
+    font-size: medium;
+    padding: 8px 30px;
+    color: gainsboro;
+    border-radius: 23px;
+    margin-bottom: 150px;
+    background-color: black;
+    font-family: 'roboto', sans-serif;
+    /* box-shadow: whitesmoke 0px 0px 2px 1px; */
+}
+
+.btn:hover {
+    color: black;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.btn a {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: black;
+}
