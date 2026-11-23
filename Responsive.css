@@ -1,0 +1,197 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Time section */
+.container {
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* Navigation Bar */
+@media (max-width: 768px) {
+    #navbar ul {
+        right: 0;
+        top: 60px;
+        opacity: 0.8;
+        width: 175px;
+        display: none;
+        position: absolute;
+        background: #fff;
+        background-color: black;
+    }
+    #navbar ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Navigation Section */
+#navbar {
+    padding: 11px;
+}
+
+/* Logo */
+#navbar img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Search Section */
+#search-input {
+    width: 150px;
+}
+
+/* Home section */
+@media screen and (max-width: 768px) {
+    #home {
+        display: flex;
+        padding: 10px 50px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #home::before {
+        content: "";
+        width: 100%;
+        height: 1233px;
+        position: absolute;
+    }
+}
+
+/* Package section */
+#package {
+    margin: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    #package .box {
+        width: 600px;
+    }
+
+    #package img {
+        width: 600px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #package .box {
+        width: 500px;
+    }
+
+    #package img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #package .box {
+        width: 400px;
+    }
+
+    #package img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #package .box {
+        width: 300px;
+    }
+
+    #package img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Product section */
+#product {
+    display: grid;
+    align-self: stretch;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+}
+
+@media screen and (max-width: 892px) {
+    #product {
+        display: grid;
+        align-self: stretch;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 666px) {
+    #product {
+        display: grid;
+        align-self: stretch;
+        align-items: center;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 527px) {
+    #product {
+        display: grid;
+        align-self: stretch;
+        align-items: center;
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+/* Contact section */
+@media screen and (max-width: 768px) {
+    #contact {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Unitility section */
+.primary {
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 440px) {
+    #package .box {
+        width: 200px;
+    }
+
+    #package img {
+        width: 200px;
+        height: auto;
+    }
+
+    .primary {
+        font-size: 3rem;
+    }
+
+    #package h2 {
+        font-size: x-large;
+    }
+
+    #package h3 {
+        font-size: large;
+    }
+
+    #package li {
+        font-size: medium;
+    }
+}
